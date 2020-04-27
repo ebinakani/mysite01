@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Ishii lab</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <meta name="viewport" content="width=device-width,user-
+    scalable=no,maximum-scale=1">
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html15shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- nav end-->
+      <div id="i_img" class="layout">
+        <section class="slider">
+          <div class="flexslider">
+            <div class="flex-viewport" style="overflow: hidden; position: relative;">
+              <ul class="slides" style="width: 2000%; transition-duration: 0.6s; transform: translate3d(-750px, 0px, 0px);">
+                <li class="clone" aria-hidden="true" style="width: 125px; float: left; display: block;">
+                  <a href="http://onlinelibrary.wiley.com/doi/10.1002/tcr.201500211/abstract" target="_blank">
+                    <img src="images/h2/publication01.png" draggable="false">
+                  </a>
+                </li>
+                <li style="width: 125px; float: left; display: block;" class>
+                  <img src="images/04.jpg" draggable="false">
+                </li>
+                <li style="width: 125px; float: left; display: block;" class>
+                  <a href="http://www.chem.saitama-u.ac.jp/msaito-lab/iccoc-gt116/">
+                    <img src="images/05.jpg" draggable="false">
+                  </a>
+                </li>
+                  ::after
+              </ul>
+              <ol class="flex-control-nav flex-control-paging">
+                <li>
+                  <a class>1</a>
+                </li>
+                <li>
+                  <a class>2</a>
+                </li>
+                <li>
+                  <a class>3</a>
+                </li>
+              </ol>
+              <ul class="flex-direction-nav">
+                <li>
+                  <a clss="flex-prev" href="#">
+                    ::before
+                    "Previous"
+                  </a>
+                </li>
+                <li>
+                  <a class="flex-next" href="#">
+                    ::before
+                    "Next"
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Javascript -->
+    <script src="js/vendor/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js">
+    </script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <!-- FlexSlider -->
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+    <script defer src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        SyntaxHighlighter.all();
+      });
+      $(window).load(function(){
+        $('.flexslider').flexslider({
+          animation: "slide",
+          start: function(slider){
+            $('body').removeClass('loading');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
